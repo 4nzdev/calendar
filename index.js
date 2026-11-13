@@ -1,18 +1,39 @@
-let clix = 0;
-let to = setTimeout(() => {});
+const map = {
+  width: 80,
+  height: 70
+}
 
-function clik() {
-  clix++
-  elem("counter").innerHTML = clix + " clix :3";
+const grid = [];
 
-  clearTimeout(to);
+
+function buildMap(width, height) {
+  let map = elem("map");
+  map.style.gridTemplateColumns = `repeat(${width}, 1fr)`;
   
-  to = setTimeout(() => {
-    elem("counter").innerHTML = clix + " clix :<";
-  }, 5000)
+  for (y = 1; y <= height; y++) {
+    let row = [];
+    
+    for (x = 1; x <= width; x++) {
+      let coords = `(${x}, ${y})`;
+
+      let cell = document.createElement("div");
+      cell.className = "cell";
+      map.appendChild(cell);
+
+      cell.innerHTML = coords;
+
+      row.push(cell);
+    }
+
+    grid.push(row);
+  }
+
+  
   
 }
 
-function elem(id) {
-  return document.getElementById(id);
-}
+buildMap(map.width, map.height);
+
+
+
+function elem(e) { return document.getElementById(e) }

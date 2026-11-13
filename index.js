@@ -29,6 +29,8 @@ function buildMap(width, height) {
   }
 
   alert("test");
+  document.write("MEEOOOOWWWWW");
+
   
 }
 

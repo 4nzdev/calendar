@@ -1,61 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600');
-
-/* Classes CSS */
-.text {
-  color: #dddddd;
-  font-family: "Inconsolata";
+body {
+  margin: 0;
+  background-color: #301020;
 }
 
-.center {
+#map {
+  display: grid;
+  gap: 0px;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background-color: #242024;
 }
 
-.button:hover {
-  cursor: pointer;
-}
+.cell {
+  border: .1px solid #aa90aa;
+  width: 5vw;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 
-
-
-/* Main CSS */
-#header {
-  font-size: 3vw;
-  width: 12.5vw;
-  
-  border: 4px solid #dddddd;
-  border-style: none solid solid none;
-  border-bottom-right-radius: 1vw;
-}
-
-
-
-/* Clix Game CSS */
-#game {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  
-  text-align: center;
-}
-
-#click {
-  background-color: #606065;
-  width: 20vw;
-  aspect-ratio: 3/1;
-  border: none;
-  border-radius: 1vw;
-  font-size: 4vw;
-}
-
-#click:active {
-  background-color: #707075;
-  transform: scale(1.05);
-  transition: transform 20ms ease-in-out;
-}
-
-#counter {
-  font-size: 2.5vw;
+  color: #605060;
+  font-size: .7em;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }

@@ -28,7 +28,7 @@ function buildMap(width, height) {
     grid.push(row);
   }
 
-  
+  alert("test");
   
 }
 

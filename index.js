@@ -27,10 +27,6 @@ function buildMap(width, height) {
 
     grid.push(row);
   }
-
-  alert("test");
-  document.write("MEEOOOOWWWWW");
-
   
 }
 

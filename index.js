@@ -1,6 +1,6 @@
 const map = {
-  width: 80,
-  height: 70
+  width: 120,
+  height: 90
 }
 
 const grid = [];
